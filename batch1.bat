@@ -1,0 +1,1 @@
+"C:\Users\tcdin\AppData\Local\Programs\Python\Python38-32\python.exe" "C:\Users\tcdin\Desktop\New folder\Filefinal.py"
