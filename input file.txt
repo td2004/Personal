@@ -1,0 +1,10 @@
+Elements of the list are:  [9.0, 9.0, 8.0]
+Your list in asending order : [8.0, 9.0, 9.0]
+Your list in desending order : [9.0, 9.0, 8.0]
+Odd numbers are 9.0
+Odd numbers are 9.0
+Even numbers in the list are:  8.0
+Average is:  8.666666666666666
+Minimum value is:  8.0
+Maximum value is:  9.0
+Sum of your list is:  26.0

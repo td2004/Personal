@@ -1,0 +1,15 @@
+list = []
+while True:
+    try:
+        element = float(input("enter numbers: "))
+    except ValueError:
+        print("Please enter numbers.")
+    else:
+        break
+        
+while True:
+    list.append(element) 
+    element = float(input("enter numbers: "))
+    choice = input("want to stop? if yes type yes otherwise hit any key!")
+    if choice == "yes":
+        break
