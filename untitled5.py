@@ -1,18 +1,26 @@
-from datetime import datetime
-from datetime import date
-from datetime import timedelta
-#import datetime 
-#datetime.utcnow()
-#today = str(input('Enter date(yyyy-mm-dd): '))
-#my_date = datetime.strptime(my_string, "%Y-%m-%d")
-#Friday = today + datetime.timedelta( (4-today.weekday()) % 7 )
-        #my_string += datetime.timedelta(1)
-
-
-#today = datetime_str =(input('Enter date(yyyy-mm-dd): '))
-#friday = today + datetime_str.timedelta( (4-today.weekday()) % 7 )
-
-from datetime import datetime, timedelta
-date_entry = input('Enter a date in YYYY-MM-DD format')
-date1 = datetime.strptime(date_entry, '%Y-%m-%d')
-friday = date_entry + datetime.timedelta( (4-data_entry.weekday()) % 7 )
+def determine_game_winner(computer, human,  number_of_gesture):
+    i = 0
+    ii = 0
+    if(computer==human):
+        return(TIE)
+    winners = {
+      "column 1": [ROCK, PAPER, SCISSORS,SPOCK,LIZARD,AIR,FIRE,HUMAN,GUN,WOLF,DEVIL],
+      "column 2": [SCISSORS, LIZARD, FIRE, HUMAN, WOLF,
+                   ROCK, SPOCK, AIR, GUN, DEVIL,
+                   PAPER, LIZARD, AIR, HUMAN, WOLF,
+                   ROCK, SCISSORS, FIRE, GUN, DEVIL,
+                   PAPER, SPOCK, AIR,GUN, DEVIL,
+                   ROCK, SPOCK, FIRE, GUN, DEVIL,
+                   PAPER, SPOCK, LIZARD, AIR, WOLF,
+                   ROCK, SCISSORS, FIRE, HUMAN, WOLF,
+                   PAPER, SPOCK, LIZARD, AIR, DEVIL,
+                   ROCK, SCISSORS, FIRE, HUMAN, GUN]
+    }
+    df = pd.DataFrame(winners, columns = ['column 1, column 2'])
+    for ind in df.index:
+        for i in range(number_of_gesture):
+            if (computer == winners[i][0]):
+                for ii in range((number_of_gesture+1)//2-1):
+                    if (human == winners[i][ii]):
+                        return (COMPUTER)               
+            return (PLAYER)

@@ -1,0 +1,15 @@
+for i in range(len(x)):
+    #if (j=0,j<i,j+=1):
+    print("check_gesture with gesture = ",j," and number of gestures is",i, "is passed")
+        
+else:
+    print("check_gesture with gesture = ",j," and number of gestures is",i, "is failed")  
+j =0
+i =0        
+x = Functions.check_gesture         
+for i in range(0 , j<i, 1):
+    if (Functions.check_gesture(j, i) == 0):
+        print("check_gesture with gesture = ",j," and number of gestures is",i, "is passed")
+        
+else:
+    print("check_gesture with gesture = ",j," and number of gestures is",i, "is failed")  
